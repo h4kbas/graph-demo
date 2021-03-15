@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+            border: 1px solid lightgray;
+        }
+    </style>
+    <title>Data</title>
+</head>
+<body>
+    <form id="dataform">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <label for="category">Category</label>
+        <select id="categorylist" name="category">
+        </select>
+        <input type="checkbox" name="addtolist">
+        <label for="addtolist">Add to List?</label>
+        <input id="send" type="button" value="Save">
+    </form>
+    <label for="name">Filter</label>
+    <input type="text" id="filter">
+    <input type="button" id="filterbutton" value="Search">
+    <div id="mynetwork"></div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
